@@ -1,0 +1,16 @@
+{
+    "name": "letters-and-words",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "copy-contracts": "cp ../build/contracts/Letter.json ./contracts/Letter.json && cp ../build/contracts/Word.json ./contracts/Word.json",
+        "build": "browserify index.js -o bundle.js"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "browserify": "^17.0.0",
+        "web3": "^1.6.0"
+    }
+}
