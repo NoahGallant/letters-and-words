@@ -19,7 +19,7 @@ The `tokenURI` function generates a Base64 JSON load with a unique `name` identi
 The `claim` function allows minting of `LETTER`s. `tokenId`s correspond to latin letters direction in a repeating fashion:
 
 | tokenId | letter |
-| --- | --- | --- |
+| --- | --- |
 | 1 | a |
 | 2 | b |
 | ... | ... |
