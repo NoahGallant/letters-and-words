@@ -84,6 +84,8 @@ $('#add').addEventListener('click', async () => {
     let wordId = $('#wordSelect').value;
 
     if (letterId !== '' && wordId !== '') {
+        $('#error').innerHTML = 'Sending...'
+        await letter.methods.approve(word.options.address, letterId).send({ from: window.account, gas: 1000000 });
         await word.methods.addLetter(letterId, wordId).send({ from: window.account, gas: 1000000 });
         await updateBalance();
     } else {
@@ -95,6 +97,7 @@ $('#pop').addEventListener('click', async () => {
     let wordId = $('#wordSelect').value;
     
     if (wordId !== '') {
+        $('#error').innerHTML = 'Sending...'
         await word.methods.removeLetter(window.account, wordId).send({ from: window.account, gas: 1000000 });
 
         await updateBalance();
@@ -107,6 +110,7 @@ $('#create').addEventListener('click', async () => {
     let letterId = $('#letterSelect').value;
     
     if (letterId !== '') {
+        $('#error').innerHTML = 'Sending...'
         await letter.methods.safeTransferFrom(window.account, word.options.address, letterId).send({ from: window.account, gas: 1000000 });
 
         await updateBalance();
@@ -119,10 +123,10 @@ $('#mint').addEventListener('click', async () => {
     let letterId = $('#newletters').selectedIndex + 1;
     
     for (let i = 0; i < 100; i++) {
+        $('#error').innerHTML = 'Sending...'
         let minted = await letter.methods.exists(letterId + (26 * i)).call();
         if (!minted) {
             await letter.methods.claim(letterId + (26 * i)).send({ from: window.account, gas: 1000000 });
-            await letter.methods.setApprovalForAll(window.word.options.address, true).send({ from: window.account, gas: 1000000 });
 
             await updateBalance();
             return;
