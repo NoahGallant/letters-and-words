@@ -19,7 +19,7 @@ The `tokenURI` function generates a Base64 JSON load with a unique `name` identi
 The `claim` function allows minting of `LETTER`s. `tokenId`s correspond to latin letters direction in a repeating fashion:
 
 | tokenId | letter |
---- | --- | ---
+| --- | --- | --- |
 | 1 | a |
 | 2 | b |
 | ... | ... |
@@ -35,6 +35,8 @@ Using the standard `safeTransferFrom` function to send a `LETTER` to the `WORD` 
 
 ### Word.sol
 `WORD` is a more complicated enumerated [ERC721](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721Enumerable) and [ERC721Holder](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721Holder) which is composed of `LETTER`s. Each token can contain up to 5 `LETTER`s, with functions to `addLetter`, `popLetter` and convert a `letterToWord`.
+
+***Ropsten address:*** `0x6b81dBA50F7DEcD088dE06F588E9cBd1Afb9CED9`
 
 #### addLetter(uint256 letterId, uint256 wordId)
 The `addLetter` function takes an existing `LETTER` NFT and creates a new `WORD` composed of only that letter. The function transfers the `LETTER` to the contract address, and adds it to a mapping of `WORD` token IDs to dynamic arrays of `LETTER` IDs. In order to limit on-chain data and gas costs the limit of letters per `WORD` is 5. Upon adding a 6th `LETTER` the first `LETTER` to be added is popped and transferred to the sender, and the new letter is added to the end of the `WORD`.
