@@ -48,7 +48,7 @@ This function pops the last letter in the `WORD` and sends the token to the desi
 Similar to performing a `safeTransferFrom` of a `LETTER` to the `WORD` contract address, this function performs the same transfer and mints a new `WORD` owned by the sender.
 
 ## Interface Documentation
-The interface in the repository is a simple Node.js application to allow for UI interaction with the `LETTER` and `WORD` contracts. The interface utilizes `web3.js` for contract interaction. After contract function calls you will need to wait for the transaction to complete then refresh to see changes reflected.
+The interface in the repository is a simple javascript application to allow for UI interaction with the `LETTER` and `WORD` contracts. The interface utilizes `web3.js` for contract interaction. After contract function calls you will need to wait for the transaction to complete then refresh to see changes reflected.
 
 ## Disclaimer
 These contracts have not been audited nor extensively tested. It should not be deployed the the mainnet.
