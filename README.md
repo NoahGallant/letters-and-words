@@ -1,5 +1,5 @@
 # LETTERs and WORDs
-NFT project for LETTERs and WORDs (ERC721). Inspired by [LOOT](https://lootproject.com) and [LootLoose](https://github.com/gakonst/lootloose).
+NFT project for LETTERs and WORDs (ERC721). Inspired by [LOOT](https://lootproject.com), [LootLoose](https://github.com/gakonst/lootloose) and [Blockheads](https://blockheads.family).
 
 ## Configuration
 Currently configured for [Ropsten](https://faucet.dimensions.network/) test network. An interface (`/interface`) to mint and call contract functions is accessible from [https://letters-words.vercel.app/](https://letters-words.vercel.app/). This interface requires MetaMask.
