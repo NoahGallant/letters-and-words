@@ -2,7 +2,7 @@
 NFT project for LETTERs and WORDs (ERC721). Inspired by [LOOT](https://lootproject.com) and [LootLoose](https://github.com/gakonst/lootloose).
 
 ## Configuration
-Currently configured for Ropsten test network. Interface (`/interface`) to mint and call contract functions is accessible from [https://html-interface-noahg.vercel.app/](https://html-interface-noahg.vercel.app/).
+Currently configured for Ropsten test network. An interface (`/interface`) to mint and call contract functions is accessible from [https://html-interface-noahg.vercel.app/](https://html-interface-noahg.vercel.app/). This interface requires MetaMask.
 
 ## Contract Documentation
 This project is meant to demonstrate interchangable/composable [ERC721](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721Enumerable) `LETTER` and `WORD` contracts.
