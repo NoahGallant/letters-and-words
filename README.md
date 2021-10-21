@@ -5,7 +5,7 @@ NFT project for LETTERs and WORDs (ERC721). Inspired by [LOOT](https://lootproje
 Currently configured for Ropsten test network. Interface (`/interface`) to mint and call contract functions is accessible from [https://html-interface-noahg.vercel.app/](https://html-interface-noahg.vercel.app/).
 
 ## Contract Documentation
-This project is meant to demonstrate interchangable/composable ERC721 LETTER and WORD contracts.
+This project is meant to demonstrate interchangable/composable [ERC721](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721Enumerable) `LETTER` and `WORD` contracts.
 
 ### Letter.sol
 `LETTER` is a simple enumerated [ERC721](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721Enumerable) contract with two custom functions: `tokenURI` and `claim`. There exists 100 of each latin lowercase letter (a...z) available to claim.
